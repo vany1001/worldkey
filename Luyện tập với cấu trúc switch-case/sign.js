@@ -1,5 +1,5 @@
 let value =prompt('nhap value', 0);
- switch (value) {
+ switch (true) {
     case (value > 0) :
         alert(1);
         break;
