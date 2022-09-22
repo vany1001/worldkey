@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển từ độ C sang độ F</title>
+</head>
+<body> 
+    <!-- <h1>Chuyển từ độ C sang độ F.</h1> -->
+   <table>
+      <tr>
+        <td> <label for="c">Độ C</label></td>
+        <td><input type="number" id="do_c"></td>
+      </tr>
+      <tr>
+        <td><label for="f">Độ F</label></td>
+        <td><input type="text" id="do_f"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button onclick="kq()">Kết quả</button></td>
+      </tr>
+   </table>
+       
+    <script>
+        function kq(){
+            let c = Number(document.getElementById("do_c").value);
+            let f = c * 9/5 + 32;
+            document.getElementById("do_f").value= (`${c} độ C sẽ là ${f} độ F`)  ;
+        }
+        
+    </script>
+    
+</body>
+</html>
