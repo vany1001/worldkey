@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai2</title>
+</head>
+<body>
+    <script>
+        let num = prompt("nhập nhiệt độ: ");
+        while (num < 20 || num > 100) {
+            if (num > 100) {
+                alert ("hãy giảm nhiệt độ");
+            } else if( num <20) {
+                alert ("hãy tăng nhiệt độ");
+            }
+        }
+        document.write("nhiệt độ là " + num);
+    </script>
+</body>
+</html>
