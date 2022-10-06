@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu 3</title>
+</head>
+
+<body>
+    <input type="text" id="string">
+    <button onclick="nguyenAm()">Kết Quả</button>
+    <div id="am"></div>
+    <script>
+        let key = 0;
+        let vcount = 0;
+        var vowel_list = ['a', 'o', 'e', 'u', 'i'];
+        function nguyenAm() {
+            let string = document.getElementById('string').value;
+            let arrString = string.split('');
+            for (i = 0; i < arrString.length; i++) {
+                for (let j = 0; j < 5; j++) {
+                    if (arrString[i] == vowel_list[j]) {
+                        vcount++;
+                        break;
+                    }
+                } document.getElementById('am').innerHTML = `Tổng số nguyên âm là: ${vcount} `
+            } vcount = 0;
+        }    
+    </script>
+
+</body>
+</html>

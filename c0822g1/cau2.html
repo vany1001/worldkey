@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = prompt("Nhập số cần tìm");
+        let arr = [-9, -4, 3, -2, -1, 0, 6, 2, 3];
+        function findIndex(number, arr) {
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] == number) {
+                    return alert(`Số ${number} có trong mảng và nằm ở vị trí ${i} `);
+                }
+            }
+            return alert('số này không có trong mảng');
+        }
+        findIndex(a, arr);
+    </script>
+</body>
+
+</html>
